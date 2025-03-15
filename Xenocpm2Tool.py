@@ -7,14 +7,13 @@ from rich.console import Console
 from rich.prompt import Prompt, IntPrompt
 from rich.text import Text
 from rich.style import Style
-import figlet_format
 import pystyle
 from pystyle import Colors, Colorate
 
 from xenocpm2 import Tresehshs
 
-__CHANNEL_USERNAME__ = "XenoMainChat"
-__GROUP_USERNAME__   = "XenoMainChannel"
+__CHANNEL_USERNAME__ = "XenoMainChannel"
+__GROUP_USERNAME__   = "XenoMainChat"
 
 def signal_handler(sig, frame):
     print("\n Bye Bye...")
@@ -38,12 +37,26 @@ def gradient_text(text, colors):
     return colorful_text
 
 def banner(console):
-    os.system('cls' if os.name == 'nt' else 'clear')
-    brand_name = figlet_format('CPMNuker2', font='drpepper')
+    os.system('cls' if os.name == 'nt' else 'clear')   
+    brand_name =  "                 ██╗  ██╗███████╗███╗  ██╗  █████╗ \n"      
+    brand_name += "                 ╚██╗██╔╝██╔═══╝ ████╗ ██║ ██╔═██╗ \n"      
+    brand_name += "                  ╚███╔╝ █████╗  ██╔██╗██║ ██║  ██║ \n"   
+    brand_name += "                  ██╔██╗ ██╔══╝  ██║╚████║ ██║  ██║ \n"    
+    brand_name += "                 ██╔╝╚██╗███████╗██║ ╚███║╚█████╔╝ \n"
+    brand_name += "                 ╚═╝  ╚═╝╚══════╝╚═╝  ╚══╝  ╚════╝ \n"
     colors = [
         "rgb(255,0,0)", "rgb(255,69,0)", "rgb(255,140,0)", "rgb(255,215,0)", "rgb(173,255,47)", 
         "rgb(0,255,0)", "rgb(0,255,255)", "rgb(0,191,255)", "rgb(0,0,255)", "rgb(139,0,255)",
         "rgb(255,0,255)"
+    ]
+    colorful_text = gradient_text(brand_name, colors)
+    console.print(colorful_text)
+    print(Colorate.Horizontal(Colors.rainbow, '=================================================================='))
+    print(Colorate.Horizontal(Colors.rainbow, '\t         𝐏𝐋𝐄𝐀𝐒𝐄 𝐋𝐎𝐆𝐎𝐔𝐓 𝐅𝐑𝐎𝐌 𝐂𝐏𝐌 𝐁𝐄𝐅𝐎𝐑𝐄 𝐔𝐒𝐈𝐍𝐆 𝐓𝐇𝐈𝐒 𝐓𝐎𝐎𝐋'))
+    print(Colorate.Horizontal(Colors.rainbow, '    𝐒𝐇𝐀𝐑𝐈𝐍𝐆 𝐓𝐇𝐄 𝐀𝐂𝐂𝐄𝐒𝐒 𝐊𝐄𝐘 𝐈𝐒 𝐍𝐎𝐓 𝐀𝐋𝐋𝐎𝐖𝐄𝐃 𝐀𝐍𝐃 𝐖𝐈𝐋𝐋 𝐁𝐄 𝐁𝐋𝐎𝐂𝐊𝐄𝐃'))
+    print(Colorate.Horizontal(Colors.rainbow, f' ‌           𝐓𝐞𝐥𝐞𝐠𝐫𝐚𝐦: @{__CHANNEL_USERNAME__} 𝐎𝐫 @{__GROUP_USERNAME__}'))
+    print(Colorate.Horizontal(Colors.rainbow, '=================================================================='))
+
     ]
     colorful_text = gradient_text(brand_name, colors)
     console.print(colorful_text, end=None)
