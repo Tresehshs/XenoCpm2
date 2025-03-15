@@ -1,15 +1,4 @@
 ﻿#!/usr/bin/python
-
-# Copyright (C) Anasov <me@anasov.ly> - All Rights Reserved
-# Unauthorized copying of this file, via any medium is strictly prohibited
-# Proprietary and confidential
-# Written by Anasov <me@anasov.ly>, 05, May, 2024.
-
-#############################################
-# DO NOT BUY THIS TOOL FROM ANY SCAMMER !!! #
-# OFFICIAL SELLER IS 'ANAS' AT TELEGRAM !!! #
-#############################################
-
 import random
 import requests
 from time import sleep
@@ -19,10 +8,10 @@ from rich.console import Console
 from rich.prompt import Prompt, IntPrompt
 from rich.text import Text
 from rich.style import Style
-from thein import Thein
+from thein import Tresehshs
 
-__CHANNEL_USERNAME__ = "CPMNuker"
-__GROUP_USERNAME__   = "CPMNukerChat"
+__CHANNEL_USERNAME__ = "XenoMainChat"
+__GROUP_USERNAME__   = "XenoMainChannel"
 
 def signal_handler(sig, frame):
     print("\n Bye Bye...")
