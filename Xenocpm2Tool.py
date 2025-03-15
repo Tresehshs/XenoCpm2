@@ -7,6 +7,7 @@ from rich.console import Console
 from rich.prompt import Prompt, IntPrompt
 from rich.text import Text
 from rich.style import Style
+import pyfiglet_format
 import pystyle
 from pystyle import Colors, Colorate
 
