@@ -7,7 +7,7 @@ from rich.console import Console
 from rich.prompt import Prompt, IntPrompt
 from rich.text import Text
 from rich.style import Style
-from thein import Tresehshs
+from xencpm import Tresehshs
 
 __CHANNEL_USERNAME__ = "XenoMainChat"
 __GROUP_USERNAME__   = "XenoMainChannel"
