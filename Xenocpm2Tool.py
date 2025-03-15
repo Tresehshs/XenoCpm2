@@ -3,10 +3,13 @@ import random
 import requests
 from time import sleep
 import os, signal, sys
+import pyfiglet and figlet_format
 from rich.console import Console
 from rich.prompt import Prompt, IntPrompt
 from rich.text import Text
 from rich.style import Style
+import pystyle
+from pystyle import Colors, Colorate
 
 from xenocpm2 import Tresehshs
 
